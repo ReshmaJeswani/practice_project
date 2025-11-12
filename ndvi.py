@@ -6,7 +6,7 @@ import sys
 def load_image_with_four_bands(filepath):
     """
     Loads an image with four bands (Red, Green, Blue, NIR) using rasterio.
-    Returns a dictionary with band arrays.
+    Returns a dictionary with band arrays. 
     """
     with rasterio.open(filepath) as src:
         red = src.read(1)
